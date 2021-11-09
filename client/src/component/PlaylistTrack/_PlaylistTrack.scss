@@ -1,0 +1,58 @@
+@use '../../partials/mixin' as *;
+@use '../../partials/typography' as *;
+@use '../../partials/variables' as *;
+
+.playlist{
+    color: #ead9ac;
+    display: flex;
+    justify-content: center;
+
+    &:first-child{
+        display: none;
+    }
+
+    &__title--background{
+        background-color: #5c417674;
+        width: 28rem;
+        margin: 0 auto;
+        border-radius: 1rem;
+    }
+
+    &__title{
+        font-family: "akbar";
+        color: #ead9ac;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    &__space-between{
+        background-color: #5c417674;
+        width: 28rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.5rem;
+        
+
+    }
+
+    &__item{
+        @include fontstyling(1rem,300);
+    }
+
+    &__button-box{
+        display: flex;
+    }
+
+    &__button{
+        height: 1.3rem;
+        width: 2rem;
+        color: #e5d29c;
+        background-color: #395baa;
+        border-radius: 0.3rem;
+        font-family: "Overpass";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
